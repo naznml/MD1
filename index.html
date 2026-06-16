@@ -1,1 +1,2500 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мектепке дейінгі педагогика | Ресми құжаттар бойынша КТ дайындық</title>
 
+  <style>
+    :root {
+      --bg: #f7f3ea;
+      --bg-soft: #fffaf0;
+      --card: rgba(255, 255, 255, 0.86);
+      --text: #2d2418;
+      --muted: #7a6b58;
+      --accent: #b6783d;
+      --accent-2: #6d8f62;
+      --accent-3: #c95f4a;
+      --line: rgba(92, 70, 43, 0.14);
+      --shadow: 0 24px 70px rgba(79, 55, 28, 0.14);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --good: #3f8f5f;
+      --bad: #b44a3d;
+      --warn: #c28a32;
+      --cream: #fff4dd;
+      --green-soft: #edf5e7;
+      --red-soft: #fff0eb;
+      --brown-soft: #f5eadb;
+      --blue-soft: #edf3ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(182, 120, 61, 0.18), transparent 30%),
+        radial-gradient(circle at top right, rgba(109, 143, 98, 0.18), transparent 28%),
+        linear-gradient(180deg, #fbf5e9 0%, #f7f3ea 45%, #f5efe3 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 28px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      padding: 18px 0 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.58);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 10px 12px 10px 18px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 12px 35px rgba(90, 62, 28, 0.08);
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #3a2a19;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #c58a4d, #7b9a69);
+      color: #fff;
+      font-weight: 900;
+      box-shadow: 0 10px 22px rgba(121, 86, 48, 0.24);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 240, 0.9);
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .hero {
+      margin: 18px 0 26px;
+      padding: clamp(28px, 4vw, 56px);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 248, 232, 0.92)),
+        url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23b6783d' stroke-opacity='.13' stroke-width='1'%3E%3Cpath d='M20 20h80v80H20z'/%3E%3Cpath d='M40 20v80M60 20v80M80 20v80M20 40h80M20 60h80M20 80h80'/%3E%3C/g%3E%3C/svg%3E");
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -80px;
+      top: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(109, 143, 98, 0.25), transparent 65%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: #557d48;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+      color: #2b2116;
+    }
+
+    .hero p {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+      max-width: 720px;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 20px;
+      box-shadow: 0 16px 50px rgba(79, 55, 28, 0.1);
+    }
+
+    .hero-stat {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-stat:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-num {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: var(--cream);
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .stat-text strong {
+      display: block;
+      color: #2e2418;
+      font-size: 15px;
+      line-height: 1.25;
+    }
+
+    .stat-text span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px;
+      line-height: 1.35;
+    }
+
+    .section {
+      margin: 26px 0;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 36px);
+      letter-spacing: -0.035em;
+      color: #2e2418;
+      line-height: 1.12;
+    }
+
+    .section-subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .doc-card {
+      position: relative;
+      padding: 22px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--line);
+      background: var(--card);
+      box-shadow: 0 16px 45px rgba(79, 55, 28, 0.09);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 28px 70px rgba(79, 55, 28, 0.16);
+      border-color: rgba(182, 120, 61, 0.36);
+    }
+
+    .doc-card::before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      right: -65px;
+      top: -65px;
+      border-radius: 50%;
+      background: rgba(182, 120, 61, 0.14);
+    }
+
+    .doc-card:nth-child(2)::before {
+      background: rgba(109, 143, 98, 0.16);
+    }
+
+    .doc-card:nth-child(3)::before {
+      background: rgba(201, 95, 74, 0.13);
+    }
+
+    .doc-badge {
+      display: inline-flex;
+      width: fit-content;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--brown-soft);
+      color: #8a5a2f;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      margin-bottom: 14px;
+    }
+
+    .doc-card h3 {
+      margin: 0 0 12px;
+      font-size: 21px;
+      line-height: 1.18;
+      letter-spacing: -0.025em;
+      color: #2e2418;
+      position: relative;
+      z-index: 1;
+    }
+
+    .doc-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14.5px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .doc-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .arrow {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #fff4df;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .structure-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .topic-chip {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 12px 30px rgba(79, 55, 28, 0.06);
+      min-height: 108px;
+    }
+
+    .topic-chip span {
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 11px;
+      background: var(--cream);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .topic-chip strong {
+      display: block;
+      line-height: 1.25;
+      font-size: 14px;
+      color: #35291c;
+    }
+
+    .content-shell {
+      margin: 26px 0;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .side-nav {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 18px 45px rgba(79, 55, 28, 0.08);
+      padding: 14px;
+      position: sticky;
+      top: 12px;
+    }
+
+    .side-nav-title {
+      font-weight: 900;
+      color: #33271a;
+      margin: 6px 8px 12px;
+      font-size: 14px;
+    }
+
+    .side-nav a,
+    .side-nav button {
+      display: block;
+      width: 100%;
+      border: 0;
+      text-align: left;
+      background: transparent;
+      padding: 10px 11px;
+      border-radius: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      cursor: pointer;
+      font-family: inherit;
+      line-height: 1.3;
+    }
+
+    .side-nav a:hover,
+    .side-nav button:hover,
+    .side-nav a.active,
+    .side-nav button.active {
+      background: var(--cream);
+      color: #8a5a2f;
+    }
+
+    .doc-section {
+      display: none;
+    }
+
+    .doc-section.active {
+      display: block;
+      animation: fadeUp 0.35s ease;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 18px 50px rgba(79, 55, 28, 0.08);
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: 18px;
+    }
+
+    .content-card h2 {
+      margin: 0 0 10px;
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      color: #2e2418;
+    }
+
+    .content-card h3 {
+      margin: 24px 0 10px;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      color: #3b2d1f;
+    }
+
+    .content-card h4 {
+      margin: 18px 0 8px;
+      font-size: 17px;
+      color: #4b3926;
+    }
+
+    .content-card p {
+      margin: 10px 0;
+      color: #554637;
+    }
+
+    .lead {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 900px;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .info-box {
+      border-radius: 18px;
+      padding: 15px;
+      border: 1px solid var(--line);
+      background: #fffaf2;
+    }
+
+    .info-box strong {
+      display: block;
+      color: #36291b;
+      margin-bottom: 4px;
+    }
+
+    .info-box span {
+      color: var(--muted);
+      font-size: 14px;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .note {
+      border-left: 5px solid var(--accent);
+      background: var(--cream);
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin: 18px 0;
+      color: #5d452c;
+    }
+
+    .note strong {
+      color: #3b2b1b;
+    }
+
+    .term-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .term {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 241, 0.8);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .term strong {
+      display: block;
+      color: #3a2c1d;
+      margin-bottom: 4px;
+    }
+
+    .term span {
+      display: block;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .list-card {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .list-item {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 13px;
+      border-radius: 16px;
+      background: rgba(255, 250, 241, 0.78);
+      border: 1px solid var(--line);
+    }
+
+    .list-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: var(--green-soft);
+      color: #5b804d;
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .list-item strong {
+      display: block;
+      color: #3b2d1f;
+      margin-bottom: 3px;
+    }
+
+    .list-item span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .mini-table {
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      margin: 16px 0;
+      background: rgba(255, 255, 255, 0.68);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+    }
+
+    th, td {
+      padding: 13px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      background: #fff2dc;
+      color: #4a3320;
+      font-size: 14px;
+    }
+
+    td {
+      color: #5a4939;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .test-box {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 24px;
+      border: 1px solid rgba(182, 120, 61, 0.22);
+      background: linear-gradient(180deg, rgba(255, 250, 240, 0.92), rgba(255, 255, 255, 0.72));
+    }
+
+    .question {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid var(--line);
+      margin-bottom: 14px;
+    }
+
+    .q-title {
+      font-weight: 900;
+      color: #2e2418;
+      margin-bottom: 12px;
+    }
+
+    .options {
+      display: grid;
+      gap: 8px;
+    }
+
+    .option {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 11px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #fffaf2;
+      cursor: pointer;
+      transition: 0.2s ease;
+      color: #4d3d2e;
+      font-size: 14.5px;
+    }
+
+    .option:hover {
+      border-color: rgba(182, 120, 61, 0.45);
+      background: #fff4df;
+    }
+
+    .option input {
+      margin-top: 4px;
+      accent-color: var(--accent);
+    }
+
+    .explanation {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 13px;
+      border-radius: 14px;
+      background: var(--green-soft);
+      color: #45643c;
+      font-size: 14px;
+    }
+
+    .question.correct {
+      border-color: rgba(63, 143, 95, 0.45);
+      background: rgba(237, 245, 231, 0.55);
+    }
+
+    .question.wrong {
+      border-color: rgba(180, 74, 61, 0.4);
+      background: rgba(255, 240, 235, 0.56);
+    }
+
+    .question.checked .explanation {
+      display: block;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 900;
+      cursor: pointer;
+      font-family: inherit;
+      background: linear-gradient(135deg, #b6783d, #9a6330);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(154, 99, 48, 0.2);
+    }
+
+    .btn.secondary {
+      background: #fff4df;
+      color: #8a5a2f;
+      box-shadow: none;
+      border: 1px solid rgba(182, 120, 61, 0.22);
+    }
+
+    .score {
+      display: none;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #fff4df;
+      color: #6b4728;
+      font-weight: 900;
+      margin-top: 12px;
+    }
+
+    .footer-space {
+      height: 40px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .content-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .doc-grid,
+      .structure-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .side-nav {
+        position: relative;
+        top: auto;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .page {
+        width: min(100% - 18px, 1180px);
+      }
+
+      .brand {
+        border-radius: 22px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+      }
+
+      .doc-grid,
+      .structure-grid,
+      .info-row,
+      .term-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 24px 18px;
+      }
+
+      .content-card {
+        border-radius: 22px;
+        padding: 18px;
+      }
+
+      .side-nav {
+        border-radius: 20px;
+      }
+
+      .doc-card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-title">
+          <div class="brand-mark">КТ</div>
+          <div>Мектепке дейінгі педагогика</div>
+        </div>
+        <div class="top-actions">
+          <span class="pill">Ресми құжаттар</span>
+          <span class="pill">5 жауап нұсқасы</span>
+          <span class="pill">1 дұрыс жауап</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">📚 КТ дайындық сайты</div>
+          <h1>Ресми құжаттар бойынша мектепке дейінгі педагогика</h1>
+          <p>
+            Бұл бөлімде мектепке дейінгі тәрбие мен оқытуға қатысты негізгі үш ресми құжат
+            жүйеленіп берілді. Материал КТ тақырыптарына сәйкес теория, термин, құрылым
+            және тест тапсырмалары арқылы меңгеріледі.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-stat">
+            <div class="stat-num">3</div>
+            <div class="stat-text">
+              <strong>Негізгі құжат</strong>
+              <span>МЖМБС, Үлгілік оқу жоспары, Үлгілік оқу бағдарламасы</span>
+            </div>
+          </div>
+
+          <div class="hero-stat">
+            <div class="stat-num">11</div>
+            <div class="stat-text">
+              <strong>КТ тақырыптық бағыты</strong>
+              <span>Ресми спецификациядағы мазмұндық блоктарға негізделген</span>
+            </div>
+          </div>
+
+          <div class="hero-stat">
+            <div class="stat-num">A</div>
+            <div class="stat-text">
+              <strong>A / B / C деңгейлері</strong>
+              <span>Жеңіл, орташа және күрделі мазмұнды сұрақтар</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="documents">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Құжатты таңдаңыз</h2>
+          <p class="section-subtitle">
+            Әр құжат жеке бөлім ретінде ашылады. Ішінде маңызды тақырыптар, ұғымдар,
+            кестелер және КТ стиліндегі тапсырмалар беріледі.
+          </p>
+        </div>
+      </div>
+
+      <div class="doc-grid">
+        <article class="doc-card" onclick="showDoc('doc348')">
+          <div>
+            <span class="doc-badge">1-құжат</span>
+            <h3>МЖМБС<br>№348 бұйрық</h3>
+            <p>
+              Мектепке дейінгі тәрбие мен оқытудың мемлекеттік жалпыға міндетті стандарты.
+              Мазмұн, оқу жүктемесі, тәрбие мен оқыту мерзімі.
+            </p>
+          </div>
+          <div class="doc-bottom">
+            <span>Оқуды бастау</span>
+            <span class="arrow">→</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="showDoc('doc557')">
+          <div>
+            <span class="doc-badge">2-құжат</span>
+            <h3>Үлгілік оқу жоспары<br>№394 / №557</h3>
+            <p>
+              Бөбек жасы, мектеп жасына дейінгі балалар және мектепалды топқа арналған
+              ұйымдастырылған іс-әрекет құрылымы.
+            </p>
+          </div>
+          <div class="doc-bottom">
+            <span>Оқуды бастау</span>
+            <span class="arrow">→</span>
+          </div>
+        </article>
+
+        <article class="doc-card" onclick="showDoc('doc499')">
+          <div>
+            <span class="doc-badge">3-құжат</span>
+            <h3>Үлгілік оқу бағдарламасы<br>№422 / №499</h3>
+            <p>
+              Бағдарламаның мақсаты, міндеттері, жас топтары, дамыту бағыттары және
+              күтілетін нәтижелер.
+            </p>
+          </div>
+          <div class="doc-bottom">
+            <span>Оқуды бастау</span>
+            <span class="arrow">→</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="kt-structure">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">КТ мазмұны бойынша негізгі бағыттар</h2>
+          <p class="section-subtitle">
+            Үш құжаттағы материалдар төмендегі тақырыптармен байланыстырылып оқытылады.
+          </p>
+        </div>
+      </div>
+
+      <div class="structure-grid">
+        <div class="topic-chip"><span>1</span><strong>Мектепке дейінгі тәрбиелеу мен оқытудың жүйесі</strong></div>
+        <div class="topic-chip"><span>2</span><strong>Бала — зерттеу объектісі және тәрбиелеу субъектісі</strong></div>
+        <div class="topic-chip"><span>3</span><strong>Нормативтік-құқықтық құжаттар</strong></div>
+        <div class="topic-chip"><span>4</span><strong>Ерте жастағы балалардың дамуы және тәрбиесі</strong></div>
+        <div class="topic-chip"><span>5</span><strong>Тәрбиелеу мазмұны және әдістемесі</strong></div>
+        <div class="topic-chip"><span>6</span><strong>Мектеп жасына дейінгі балаларды оқыту</strong></div>
+        <div class="topic-chip"><span>7</span><strong>Ойын — жетекші іс-әрекет</strong></div>
+        <div class="topic-chip"><span>8</span><strong>Заттық-дамытушы орта</strong></div>
+        <div class="topic-chip"><span>9</span><strong>Тәрбиелеу-білім беру процесін ұйымдастыру</strong></div>
+        <div class="topic-chip"><span>10</span><strong>Мектепке дейінгі ұйым және мектеп</strong></div>
+        <div class="topic-chip"><span>11</span><strong>Отбасымен өзара ынтымақтастық</strong></div>
+        <div class="topic-chip"><span>✓</span><strong>Тест: 5 жауап нұсқасы, 1 дұрыс жауап</strong></div>
+      </div>
+    </section>
+
+    <main class="content-shell" id="study">
+      <aside class="side-nav">
+        <div class="side-nav-title">Құжаттар</div>
+        <button class="active" data-doc-btn="doc348" onclick="showDoc('doc348')">№348 МЖМБС</button>
+        <button data-doc-btn="doc557" onclick="showDoc('doc557')">№394 / №557 Үлгілік оқу жоспары</button>
+        <button data-doc-btn="doc499" onclick="showDoc('doc499')">№422 / №499 Үлгілік оқу бағдарламасы</button>
+
+        <div class="side-nav-title" style="margin-top:16px;">Жылдам өту</div>
+        <a href="#documents">Құжат карточкалары</a>
+        <a href="#kt-structure">КТ құрылымы</a>
+        <a href="#study">Оқу бөлімі</a>
+      </aside>
+
+      <div>
+        <section class="doc-section active" id="doc348">
+          <article class="content-card">
+            <h2>№348 бұйрық: Мектепке дейінгі тәрбие мен оқытудың МЖМБС</h2>
+            <p class="lead">
+              Бұл құжат мектепке дейінгі тәрбие мен оқытудың мемлекеттік жалпыға міндетті
+              стандарты ретінде білім беру мазмұнына, тәрбиеленушілердің оқу жүктемесіне
+              және тәрбие мен оқыту мерзіміне қойылатын талаптарды айқындайды.
+            </p>
+
+            <div class="info-row">
+              <div class="info-box">
+                <strong>Құжат түрі</strong>
+                <span>Мемлекеттік жалпыға міндетті стандарт</span>
+              </div>
+              <div class="info-box">
+                <strong>Негізгі бағыт</strong>
+                <span>Мектепке дейінгі тәрбие мен оқыту мазмұны</span>
+              </div>
+              <div class="info-box">
+                <strong>КТ байланысы</strong>
+                <span>Нормативтік құжаттар, орта, жас кезеңдері, ұйымдастыру</span>
+              </div>
+            </div>
+
+            <div class="note">
+              <strong>Есте сақтаңыз:</strong> стандарт мектепке дейінгі ұйымдар мен мектепалды
+              сыныптардағы тәрбиелеу-білім беру процесін ұйымдастыруға негіз болады.
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>1. Стандарттың анықтайтын талаптары</h3>
+            <p>
+              Мектепке дейінгі тәрбие мен оқытудың мемлекеттік жалпыға міндетті стандарты
+              үш негізгі талапты анықтайды:
+            </p>
+
+            <div class="list-card">
+              <div class="list-item">
+                <div class="list-num">1</div>
+                <div>
+                  <strong>Тәрбие мен оқыту мазмұны</strong>
+                  <span>Тәрбие мен оқыту нәтижелеріне бағдарланған мектепке дейінгі білім мазмұны.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">2</div>
+                <div>
+                  <strong>Оқу жүктемесінің ең жоғары көлемі</strong>
+                  <span>Тәрбиеленушілердің жас ерекшелігіне сәйкес оқу жүктемесінің шекті көлемі.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">3</div>
+                <div>
+                  <strong>Тәрбие мен оқыту мерзімі</strong>
+                  <span>Мектепке дейінгі тәрбие мен оқытуды меңгеру кезеңдері мен жас топтары.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>2. Стандарттың қолданылуы</h3>
+            <p>
+              Стандарт мектепке дейінгі тәрбие мен оқыту жүйесінде үлгілік және вариативтік
+              оқу жоспарларын, білім беру бағдарламаларын, әдістемелік материалдарды,
+              күн тәртібін және дамытушы ортаны ұйымдастыруға негіз болады.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Бағыт</th>
+                    <th>Мазмұны</th>
+                    <th>КТ үшін маңызды ұғым</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Оқу жоспарлары</td>
+                    <td>Үлгілік және вариативтік оқу жоспарларын әзірлеу</td>
+                    <td>Вариативтілік</td>
+                  </tr>
+                  <tr>
+                    <td>Бағдарламалар</td>
+                    <td>Үлгілік, білім беру, жеке, бейімделген және қосымша бағдарламалар</td>
+                    <td>Білім беру бағдарламасы</td>
+                  </tr>
+                  <tr>
+                    <td>Күн тәртібі</td>
+                    <td>Мектепке дейінгі ұйымдағы жас топтарының күн тәртібін әзірлеу</td>
+                    <td>Тәрбиелеу-білім беру процесі</td>
+                  </tr>
+                  <tr>
+                    <td>Дамытушы орта</td>
+                    <td>Баланың даралығы мен субъективтілігін қолдайтын орта құру</td>
+                    <td>Дамытушы заттық-кеңістіктік орта</td>
+                  </tr>
+                  <tr>
+                    <td>Арнайы жағдай</td>
+                    <td>Ерекше білім беру қажеттіліктері бар балаларға жағдай жасау</td>
+                    <td>Инклюзивті білім беру</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>3. Негізгі терминдер</h3>
+            <div class="term-grid">
+              <div class="term">
+                <strong>Білім алу үшін арнайы жағдайлар</strong>
+                <span>
+                  Оқу, дамыту, түзету бағдарламалары, арнайы әдістер, техникалық құралдар,
+                  психологиялық-педагогикалық қолдау және қажетті іс-әрекеттер жүйесі.
+                </span>
+              </div>
+
+              <div class="term">
+                <strong>Дамытушы орта</strong>
+                <span>
+                  Балаларға заттар мен ойыншықтарға еркін қол жеткізуге, өз әрекетін таңдауға
+                  және бастамасын іске асыруға мүмкіндік беретін орта.
+                </span>
+              </div>
+
+              <div class="term">
+                <strong>Ерекше білім беру қажеттіліктері бар балалар</strong>
+                <span>
+                  Тиісті деңгейде және қосымша білім алу үшін арнайы жағдайларға тұрақты
+                  немесе уақытша қажеттілігі бар балалар.
+                </span>
+              </div>
+
+              <div class="term">
+                <strong>Баланы толыққанды дамыту</strong>
+                <span>
+                  Қимыл белсенділігі, пайдалы тамақтану, жағымды қарым-қатынас және
+                  дамытушы орта арқылы физикалық, психологиялық, әлеуметтік,
+                  эмоционалдық денсаулық пен қауіпсіздікті қамтамасыз ету.
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>4. Тәрбиелеу-білім беру процесінің мазмұны</h3>
+            <p>
+              Тәрбиелеу-білім беру процесінде әр баланың қызығушылықтары,
+              ерекшеліктері мен қажеттіліктері ескеріледі. Балалардың құқықтары,
+              өмірі мен денсаулығын қорғау, қауіпсіз өмір сүру дағдыларын қалыптастыру,
+              ұлттық және жалпыадамзаттық құндылықтарға баулу маңызды орын алады.
+            </p>
+
+            <div class="list-card">
+              <div class="list-item">
+                <div class="list-num">A</div>
+                <div>
+                  <strong>Толыққанды даму</strong>
+                  <span>Әр баланың әлеуетін ашуға және жан-жақты дамуына жағдай жасау.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">B</div>
+                <div>
+                  <strong>Қауіпсіздік және денсаулық</strong>
+                  <span>Балалардың өмірін қорғау, денсаулығын нығайту және қауіпсіз мінез-құлықты қалыптастыру.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">C</div>
+                <div>
+                  <strong>Дағдыларды дамыту</strong>
+                  <span>Қимыл-қозғалыс, бейімделу, коммуникативтік, әлеуметтік-эмоционалды және когнитивтік дағдыларды дамыту.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">D</div>
+                <div>
+                  <strong>Мектепке дайындық</strong>
+                  <span>Баланың мектепте оқуға физикалық, психологиялық, эмоционалдық және әлеуметтік дайындығына тең бастапқы мүмкіндіктер беру.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>5. Дағдыларды дамыту бағыттары</h3>
+            <p>
+              Стандартта мектепке дейінгі жастағы балалардың дамуы бірнеше өзара байланысты
+              бағыт арқылы сипатталады.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Даму бағыты</th>
+                    <th>Негізгі мазмұны</th>
+                    <th>Түйінді ұғым</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Физикалық қасиеттер</td>
+                    <td>Дені сау баланы тәрбиелеу, салауатты өмір салты және қауіпсіз өмір сүру дағдылары</td>
+                    <td>Дене тәрбиесі</td>
+                  </tr>
+                  <tr>
+                    <td>Коммуникативтік дағдылар</td>
+                    <td>Ауызекі сөйлеу, сөздік қор, қарым-қатынас мәдениеті, қолдың ұсақ моторикасы</td>
+                    <td>Сөйлеу және қарым-қатынас</td>
+                  </tr>
+                  <tr>
+                    <td>Танымдық және зияткерлік дағдылар</td>
+                    <td>Қоршаған әлеммен әрекеттесу, зерттеу әрекеті, сенсорлық эталондар, қарапайым математикалық ұғымдар</td>
+                    <td>Таным және зерттеу</td>
+                  </tr>
+                  <tr>
+                    <td>Шығармашылық дағдылар</td>
+                    <td>Өнерді қабылдау, эмоционалды тану, шығармашылық іс-әрекетке жағдай жасау</td>
+                    <td>Шығармашылық</td>
+                  </tr>
+                  <tr>
+                    <td>Әлеуметтік-эмоционалды дағдылар</td>
+                    <td>Оң әлеуметтендіру, рухани-адамгершілік құндылықтар, дербестік, жанашырлық</td>
+                    <td>Әлеуметтену</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>6. Ұйымдастырылған іс-әрекеттерді кіріктіру</h3>
+            <p>
+              Балалардың коммуникативтік, танымдық, зияткерлік, шығармашылық,
+              зерттеушілік, физикалық қабілеттерін дамыту және әлеуметтік-эмоционалдық
+              дағдыларын қалыптастыру ұйымдастырылған іс-әрекеттерді кіріктіру арқылы
+              жүзеге асырылады.
+            </p>
+
+            <div class="term-grid">
+              <div class="term"><strong>Физикалық бағыт</strong><span>Дене тәрбиесі, ерекше балалар үшін бейімделген дене тәрбиесі, жүзу.</span></div>
+              <div class="term"><strong>Коммуникативтік бағыт</strong><span>Тіл дамыту, көркем әдебиет, сауат ашу негіздері, қазақ тілі.</span></div>
+              <div class="term"><strong>Танымдық бағыт</strong><span>Сенсорика, математика негіздері, құрастыру, қоршаған әлеммен таныстыру.</span></div>
+              <div class="term"><strong>Шығармашылық бағыт</strong><span>Сурет салу, мүсіндеу, жапсыру, музыка.</span></div>
+            </div>
+          </article>
+                    <article class="content-card">
+            <h3>7. Тәрбиелеу-білім беру процесін жоспарлау</h3>
+            <p>
+              Тәрбиелеу-білім беру процесін жоспарлау кезінде вариативтілік, балалар
+              іс-әрекетін ұйымдастырудың әртүрлі формалары, әдістері мен тәсілдері
+              ескеріледі. Процесті ұйымдастыруда тәрбиеленушілердің қызығушылықтары,
+              қажеттіліктері, жас және жеке ерекшеліктері басты назарда болады.
+            </p>
+
+            <div class="list-card">
+              <div class="list-item">
+                <div class="list-num">1</div>
+                <div>
+                  <strong>Вариативтілік</strong>
+                  <span>Білім беру мазмұнын балалардың ерекшеліктеріне, ұйым бағытына және қажеттілігіне бейімдеу.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">2</div>
+                <div>
+                  <strong>Балалар әрекетінің түрлері</strong>
+                  <span>Ұйымдастырылған, ойын, танымдық, коммуникативтік, шығармашылық, эксперименталдық, еңбек, заттық, қимылдық және бейнелеу әрекеттері.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">3</div>
+                <div>
+                  <strong>Күн тәртібі</strong>
+                  <span>Балаларды қабылдау, таңертеңгі жаттығу, тамақтану, серуендеу, күндізгі ұйқы, шынықтыру шаралары және үйге қайту.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>8. Дамытушы орта</h3>
+            <p>
+              Дамытушы орта тәрбиеленушілердің эмоционалдық жайлылығын, жан-жақты
+              дамуын, белсенділік түрлерін және бірге әрекет етуге қатысушыларды таңдау
+              мүмкіндігін қамтамасыз етеді. Орта ойын аймақтарының қанықтылығымен,
+              қолжетімділігімен, вариативтілігімен және қауіпсіздігімен сипатталады.
+            </p>
+
+            <div class="term-grid">
+              <div class="term">
+                <strong>Қолжетімділік</strong>
+                <span>Бала қажетті материалдарды, ойыншықтарды және құралдарды өз әрекетінде қолдана алады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Вариативтілік</strong>
+                <span>Ортада балалардың әртүрлі әрекетіне мүмкіндік беретін материалдар мен аймақтар болады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Қауіпсіздік</strong>
+                <span>Баланың өмірі мен денсаулығын қорғауға бағытталған жағдайлар сақталады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Эмоционалдық жайлылық</strong>
+                <span>Бала өзін еркін, сенімді сезініп, өз бастамасын іске асыруға мүмкіндік алады.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>9. Жас кезеңдері және жас топтары</h3>
+            <p>
+              Стандартта мектепке дейінгі тәрбие мен оқытудағы жас кезеңдері мен жас
+              топтары нақты көрсетіледі.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Жас кезеңі</th>
+                    <th>Жас аралығы</th>
+                    <th>Жас тобы</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Бөбек жасы</td>
+                    <td>0–2 жастағы балалар</td>
+                    <td>Ерте жас тобы — 1 жастағы балалар; кіші топ — 2 жастағы балалар</td>
+                  </tr>
+                  <tr>
+                    <td>Мектепке дейінгі жас</td>
+                    <td>3–5 жастағы балалар</td>
+                    <td>Ортаңғы топ — 3 жас; ересек топ — 4 жас; мектепалды топ/сынып — 5 жас</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="note">
+              Үлгілік оқу бағдарламасының мазмұнын меңгеру мерзімі — <strong>5 жыл</strong>,
+              бір жас тобында — <strong>1 жыл</strong>.
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>10. Мектепке дейінгі ұйым түлегінің сипаттамасы</h3>
+            <p>
+              Стандартта мектепке дейінгі ұйымның және мектепалды сыныбының түлегі
+              меңгеруі тиіс тұлғалық сипаттар көрсетіледі. Бұл сипаттар баланың
+              мектепке дайындық деңгейімен және әлеуметтік бейімделуімен байланысты.
+            </p>
+
+            <div class="term-grid">
+              <div class="term"><strong>Физикалық дамыған</strong><span>Қимыл белсенділігі, денсаулық сақтау дағдылары және қауіпсіз мінез-құлық негіздері қалыптасады.</span></div>
+              <div class="term"><strong>Ізденімпаз</strong><span>Қоршаған ортаны бақылауға, тануға және зерттеуге қызығушылық танытады.</span></div>
+              <div class="term"><strong>Бастамашыл</strong><span>Өз әрекетін таңдауға, ойын мен қарым-қатынаста белсенді болуға ұмтылады.</span></div>
+              <div class="term"><strong>Табанды</strong><span>Әрекетті аяқтауға, қиындықты жеңуге және нәтижеге жетуге талпынады.</span></div>
+              <div class="term"><strong>Бейімделуге қабілетті</strong><span>Жаңа ортаға, адамдарға және жағдайларға икемделе алады.</span></div>
+              <div class="term"><strong>Командада жұмыс істей біледі</strong><span>Құрдастарымен бірлесіп әрекет етуге және қарым-қатынас жасауға дайын болады.</span></div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>№348 бұйрық бойынша тест тапсырмалары</h3>
+            <p class="lead">
+              Тапсырмалар стандарттың негізгі ұғымдары, мазмұны, жас кезеңдері,
+              дамытушы орта және тәрбиелеу-білім беру процесі бойынша құрастырылды.
+            </p>
+
+            <div class="test-box" data-test="test348">
+              <div class="question" data-answer="B">
+                <div class="q-title">1. Мектепке дейінгі тәрбие мен оқытудың мемлекеттік жалпыға міндетті стандарты қандай талаптарды анықтайды?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_1" value="A"> Педагогтердің еңбек өтілі, жалақысы және аттестаттау тәртібі</label>
+                  <label class="option"><input type="radio" name="q348_1" value="B"> Тәрбие мен оқыту мазмұны, оқу жүктемесінің ең жоғары көлемі, тәрбие мен оқыту мерзімі</label>
+                  <label class="option"><input type="radio" name="q348_1" value="C"> Балабақша ғимаратының құрылысы, бөлме ауданы және техникалық жабдықталуы</label>
+                  <label class="option"><input type="radio" name="q348_1" value="D"> Ата-аналар жиналысының мерзімі, құжат айналымы және есеп беру тәртібі</label>
+                  <label class="option"><input type="radio" name="q348_1" value="E"> Балалардың тамақтану мәзірі, медициналық тексеріс және санитарлық журнал</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: B. Стандарт мектепке дейінгі тәрбие мен оқыту мазмұнына, оқу жүктемесінің ең жоғары көлеміне және тәрбие мен оқыту мерзіміне қойылатын талаптарды айқындайды.
+                </div>
+              </div>
+
+              <div class="question" data-answer="D">
+                <div class="q-title">2. Стандарт бойынша дамытушы орта ұғымына сәйкес келетін сипаттама қайсы?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_2" value="A"> Балаларға дайын жауаптарды есте сақтатуға арналған нұсқаулық жүйесі</label>
+                  <label class="option"><input type="radio" name="q348_2" value="B"> Педагогтің сабақ жоспарын сақтауға арналған құжаттар жиынтығы</label>
+                  <label class="option"><input type="radio" name="q348_2" value="C"> Топтағы жиһазды біркелкі орналастыруға арналған тұрақты тәртіп</label>
+                  <label class="option"><input type="radio" name="q348_2" value="D"> Заттар мен ойыншықтарға еркін қолжетімділікті және баланың өз әрекетін таңдауын қамтамасыз ететін орта</label>
+                  <label class="option"><input type="radio" name="q348_2" value="E"> Балалардың қозғалысын шектеп, тыныштық сақтауына бағытталған бөлме кеңістігі</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: D. Дамытушы орта баланың заттар мен ойыншықтарға еркін қол жеткізуін, немен айналысатынын өз бетінше таңдауын және бастамасын іске асыруын қамтамасыз етеді.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">3. Ерекше білім беру қажеттіліктері бар балаларға берілген анықтама қай жауапта дұрыс көрсетілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_3" value="A"> Тиісті деңгейде және қосымша білім алу үшін арнайы жағдайларға тұрақты немесе уақытша қажеттілігі бар балалар</label>
+                  <label class="option"><input type="radio" name="q348_3" value="B"> Мектепалды сыныпқа ерте қабылданатын және оқу қарқыны жоғары балалар</label>
+                  <label class="option"><input type="radio" name="q348_3" value="C"> Қосымша үйірмелерге қатысып, шығармашылық тапсырмаларды орындайтын балалар</label>
+                  <label class="option"><input type="radio" name="q348_3" value="D"> Бір жас тобында екі жыл тәрбиеленетін және күн тәртібіне бейімделетін балалар</label>
+                  <label class="option"><input type="radio" name="q348_3" value="E"> Топтағы ойын әрекетінде жетекшілік рөл атқаратын және құрдастарын ұйымдастыратын балалар</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Ерекше білім беру қажеттіліктері бар балалар — арнайы жағдайларға тұрақты немесе уақытша қажеттілігі бар балалар.
+                </div>
+              </div>
+
+              <div class="question" data-answer="C">
+                <div class="q-title">4. Стандарт бойынша әлеуметтік-эмоционалды дағдыларды қалыптастырудың негізгі мақсаты қандай?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_4" value="A"> Балалардың негізгі қимыл түрлерін меңгеруін және спорттық жаттығуларды орындауын қамтамасыз ету</label>
+                  <label class="option"><input type="radio" name="q348_4" value="B"> Балалардың сөздік қорын кеңейтіп, байланыстырып сөйлеуін қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q348_4" value="C"> Тәрбиеленушілерді оң әлеуметтендіру және рухани-адамгершілік құндылықтарды қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q348_4" value="D"> Сенсорлық эталондарды, қарапайым математикалық ұғымдарды және құрастыру тәсілдерін меңгерту</label>
+                  <label class="option"><input type="radio" name="q348_4" value="E"> Өнер туындыларын қабылдау мен шығармашылық іс-әрекетке жағдай жасау</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: C. Әлеуметтік-эмоционалды дағдылардың мақсаты — балаларды оң әлеуметтендіру, әлеуметтік-мәдени нормаларға тарту және рухани-адамгершілік құндылықтарды қалыптастыру.
+                </div>
+              </div>
+
+              <div class="question" data-answer="E">
+                <div class="q-title">5. Мектепке дейінгі тәрбие мен оқытудағы жас кезеңдері қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_5" value="A"> Ерте жас — 1–3 жас, мектепалды жас — 4–6 жас</label>
+                  <label class="option"><input type="radio" name="q348_5" value="B"> Бөбек жасы — 1–2 жас, бастауыш жас — 3–6 жас</label>
+                  <label class="option"><input type="radio" name="q348_5" value="C"> Кіші жас — 2–4 жас, орта жас — 4–5 жас</label>
+                  <label class="option"><input type="radio" name="q348_5" value="D"> Бөбек жасы — 0–3 жас, мектепке дейінгі жас — 4–6 жас</label>
+                  <label class="option"><input type="radio" name="q348_5" value="E"> Бөбек жасы — 0–2 жас, мектепке дейінгі жас — 3–5 жас</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: E. Стандартта бөбек жасы 0–2 жастағы балалар, мектепке дейінгі жас 3–5 жастағы балалар деп беріледі.
+                </div>
+              </div>
+
+              <div class="question" data-answer="B">
+                <div class="q-title">6. Үлгілік оқу бағдарламасының мазмұнын меңгеру мерзімі қалай көрсетіледі?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_6" value="A"> 3 жыл, әр жас тобында жарты жыл</label>
+                  <label class="option"><input type="radio" name="q348_6" value="B"> 5 жыл, бір жас тобында 1 жыл</label>
+                  <label class="option"><input type="radio" name="q348_6" value="C"> 4 жыл, бір жас тобында 2 жыл</label>
+                  <label class="option"><input type="radio" name="q348_6" value="D"> 6 жыл, мектепалды кезеңде 2 жыл</label>
+                  <label class="option"><input type="radio" name="q348_6" value="E"> 2 жыл, бөбек және мектепалды кезеңдерінде</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: B. Стандартта Үлгілік оқу бағдарламасының мазмұнын меңгеру мерзімі 5 жыл, бір жас тобында 1 жыл деп көрсетіледі.
+                </div>
+              </div>
+
+              <div class="question" data-answer="D">
+                <div class="q-title">7. Тәрбиелеу-білім беру процесіндегі күн тәртібіне кіретін іс-шаралар қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_7" value="A"> Диагностика, емтихан, бақылау жұмысы, сертификаттау, қорытынды бағалау</label>
+                  <label class="option"><input type="radio" name="q348_7" value="B"> Дәріс, семинар, зертханалық жұмыс, жоба қорғау, курстық жұмыс</label>
+                  <label class="option"><input type="radio" name="q348_7" value="C"> Сауалнама, ата-аналар жиналысы, педагогикалық кеңес, есеп беру</label>
+                  <label class="option"><input type="radio" name="q348_7" value="D"> Балаларды қабылдау, таңертеңгі жаттығу, тамақтану, серуендеу, күндізгі ұйқы, шынықтыру шаралары</label>
+                  <label class="option"><input type="radio" name="q348_7" value="E"> Құжат толтыру, әдістемелік талдау, жоспар бекіту, педагогті бағалау</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: D. Күн тәртібі балаларды қабылдау, таңертеңгі жаттығу, тамақтану, серуендеу, күндізгі ұйқы, шынықтыру шаралары және үйге қайту сияқты іс-шараларды қамтиды.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">8. Мектепке дейінгі ұйым түлегіне тән сипат қай жауапта стандарт мазмұнына сәйкес берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q348_8" value="A"> Физикалық дамыған, ізденімпаз, бастамашыл, бейімделуге қабілетті, командада жұмыс істей біледі</label>
+                  <label class="option"><input type="radio" name="q348_8" value="B"> Бағалау критерийлерін құрастырады, сабақ жоспарын талдайды, әдістемелік есеп жазады</label>
+                  <label class="option"><input type="radio" name="q348_8" value="C"> Оқу бағдарламаларын бекітеді, педагог қызметін қадағалайды, құжат айналымын жүргізеді</label>
+                  <label class="option"><input type="radio" name="q348_8" value="D"> Ғылыми мақала жазады, зерттеу әдістерін таңдайды, статистикалық талдау жасайды</label>
+                  <label class="option"><input type="radio" name="q348_8" value="E"> Оқу пәндерін бөледі, апталық жүктемені есептейді, әкімшілік шешім қабылдайды</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Стандартта түлек физикалық дамыған, ізденімпаз, бастамашыл, бейімделуге қабілетті, көпшіл, өзіне сенімді және командада жұмыс істей білетін бала ретінде сипатталады.
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn" onclick="checkTest('test348')">Жауаптарды тексеру</button>
+                <button class="btn secondary" onclick="resetTest('test348')">Қайта тапсыру</button>
+              </div>
+              <div class="score" id="score-test348"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="doc-section" id="doc557">
+          <article class="content-card">
+            <h2>№394 / №557: Мектепке дейінгі тәрбие мен оқытудың үлгілік оқу жоспары</h2>
+            <p class="lead">
+              Үлгілік оқу жоспары мектепке дейінгі тәрбие мен оқытуда ұйымдастырылған
+              іс-әрекеттердің жас топтары бойынша берілуін, олардың апталық немесе күн
+              сайынғы ұйымдастырылуын және арнайы түзету іс-әрекеттерінің құрылымын
+              көрсетеді.
+            </p>
+
+            <div class="info-row">
+              <div class="info-box">
+                <strong>Негізгі құжат</strong>
+                <span>ҚР БҒМ 2012 жылғы 20 желтоқсандағы №557 бұйрығы</span>
+              </div>
+              <div class="info-box">
+                <strong>Актуалды өзгеріс</strong>
+                <span>ҚР Оқу-ағарту министрінің 09.09.2022 жылғы №394 бұйрығы</span>
+              </div>
+              <div class="info-box">
+                <strong>КТ байланысы</strong>
+                <span>Жас топтары, ұйымдастырылған іс-әрекет, инклюзивті білім беру</span>
+              </div>
+            </div>
+
+            <div class="note">
+              Бұл құжатта үлгілік оқу жоспары үш негізгі қосымша арқылы беріледі:
+              бөбек жасындағы балалар, мектеп жасына дейінгі балалар және мектепалды топ/сынып.
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>1. Үлгілік оқу жоспарының құрылымы</h3>
+            <p>
+              Үлгілік оқу жоспарында мектепке дейінгі тәрбие мен оқыту жас топтарының
+              ерекшеліктеріне сәйкес ұйымдастырылады. Жоспарда ұйымдастырылған
+              іс-әрекеттер, күн сайын жүргізілетін әрекеттер және арнайы түзету
+              іс-әрекеттері көрсетіледі.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Қосымша</th>
+                    <th>Қамтитын жас тобы</th>
+                    <th>Негізгі мазмұны</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1-қосымша</td>
+                    <td>Бөбек жасындағы балалар</td>
+                    <td>Ерте жас тобы және кіші топқа арналған ұйымдастырылған іс-әрекеттер</td>
+                  </tr>
+                  <tr>
+                    <td>2-қосымша</td>
+                    <td>Мектеп жасына дейінгі балалар</td>
+                    <td>Ортаңғы және ересек топтарға арналған оқу жоспары</td>
+                  </tr>
+                  <tr>
+                    <td>3-қосымша</td>
+                    <td>Мектепалды топ / мектепалды сынып</td>
+                    <td>5 жастағы балаларға арналған мектепалды даярлық құрылымы</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>2. Ұйымдастырылған іс-әрекет ұғымы</h3>
+            <p>
+              Ұйымдастырылған іс-әрекет — Үлгілік оқу бағдарламасының мазмұнын іске асыру
+              үшін күні бойы педагогтің ойын түріндегі түрлі балалар әрекеті арқылы
+              ұйымдастыратын кіріктірілген сабағы.
+            </p>
+
+            <div class="term-grid">
+              <div class="term">
+                <strong>Ойын әрекеті</strong>
+                <span>Баланың жетекші әрекеті ретінде білім мазмұнын меңгеруге табиғи жағдай жасайды.</span>
+              </div>
+              <div class="term">
+                <strong>Қимыл әрекеті</strong>
+                <span>Физикалық белсенділік пен негізгі қимыл дағдыларын дамытуға бағытталады.</span>
+              </div>
+              <div class="term">
+                <strong>Танымдық әрекет</strong>
+                <span>Қоршаған әлемді бақылау, салыстыру, зерттеу және түсіну арқылы дамиды.</span>
+              </div>
+              <div class="term">
+                <strong>Шығармашылық әрекет</strong>
+                <span>Сурет салу, мүсіндеу, жапсыру, музыка және құрастыру арқылы көрінеді.</span>
+              </div>
+              <div class="term">
+                <strong>Зерттеу әрекеті</strong>
+                <span>Баланың заттар мен құбылыстарды тәжірибе арқылы тануына мүмкіндік береді.</span>
+              </div>
+              <div class="term">
+                <strong>Еңбек және дербес әрекет</strong>
+                <span>Өзіне-өзі қызмет ету, жауапкершілік және дербестік дағдыларын қалыптастырады.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>3. Бөбек жасындағы балаларға арналған жоспар</h3>
+            <p>
+              Бөбек жасындағы балаларға арналған үлгілік оқу жоспары ерте жас тобы
+              мен кіші топтағы балалардың жас ерекшеліктеріне сәйкес ұйымдастырылады.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ұйымдастырылған іс-әрекет</th>
+                    <th>Ерте жас тобы</th>
+                    <th>Кіші топ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Дене тәрбиесі</td>
+                    <td>Аптасына үш рет</td>
+                    <td>Аптасына үш рет</td>
+                  </tr>
+                  <tr>
+                    <td>Дене тәрбиесі</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Сөйлеуді дамыту және көркем әдебиет</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Сенсорика</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Қоршаған әлеммен таныстыру</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Музыка</td>
+                    <td>Аптасына бір рет</td>
+                    <td>Аптасына бір рет</td>
+                  </tr>
+                  <tr>
+                    <td>Музыка</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Арнайы түзету іс-әрекеті</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+                    <article class="content-card">
+            <h3>4. Мектеп жасына дейінгі балаларға арналған жоспар</h3>
+            <p>
+              Мектеп жасына дейінгі балаларға арналған үлгілік оқу жоспары ортаңғы топ
+              және ересек топ бойынша ұйымдастырылған іс-әрекеттердің мазмұнын көрсетеді.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Ұйымдастырылған іс-әрекет</th>
+                    <th>Ортаңғы топ<br>3 жастағы балалар</th>
+                    <th>Ересек топ<br>4 жастағы балалар</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Дене тәрбиесі</td>
+                    <td>Аптасына үш рет</td>
+                    <td>Аптасына үш рет</td>
+                  </tr>
+                  <tr>
+                    <td>Дене тәрбиесі</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Сөйлеуді дамыту және көркем әдебиет</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Қазақ тілі</td>
+                    <td>Аптасына бір рет</td>
+                    <td>Аптасына бір рет</td>
+                  </tr>
+                  <tr>
+                    <td>Қазақ тілі</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Математика негіздері</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Қоршаған әлеммен таныстыру</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Сурет салу, мүсіндеу, жапсыру, құрастыру</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Музыка</td>
+                    <td>Аптасына бір рет</td>
+                    <td>Аптасына екі рет</td>
+                  </tr>
+                  <tr>
+                    <td>Музыка</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                  <tr>
+                    <td>Арнайы түзету іс-әрекеті</td>
+                    <td>Күн сайын</td>
+                    <td>Күн сайын</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>5. Арнайы түзету іс-әрекетінің бағыттары</h3>
+            <p>
+              Үлгілік оқу жоспарында ерекше білім беру қажеттілігі бар балаларға арналған
+              арнайы түзету іс-әрекеттері бұзылыстың түріне және жас тобына қарай
+              көрсетіледі.
+            </p>
+
+            <div class="term-grid">
+              <div class="term">
+                <strong>Көру қабілеті зақымдалған балалар</strong>
+                <span>Көру қабілеті, кеңістікте бағдарлай білу және әлеуметтік-тұрмыстық бағдар бағыттары қамтылады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Есту қабілеті зақымдалған балалар</strong>
+                <span>Сөйлеуді дамыту, есту арқылы қабылдау мен айтуды қалыптастыруды дамыту қарастырылады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Тірек-қимыл аппараты бұзылған балалар</strong>
+                <span>Физикалық қасиеттерді дамыту, емдік дене тәрбиесі және түзету жұмысы беріледі.</span>
+              </div>
+
+              <div class="term">
+                <strong>Сөйлеу тілінің бұзылыстары бар балалар</strong>
+                <span>Коммуникативтік дағдыларды дамыту, сөйлеуді дамыту және дыбыстап айту бағыттары қамтылады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Психикалық дамуы тежелген балалар</strong>
+                <span>Танымдық және зияткерлік дағдыларды дамыту, қоршаған ортамен таныстыру, сөйлеуді дамыту, сенсорика және түзету жұмысы беріледі.</span>
+              </div>
+
+              <div class="term">
+                <strong>Зияты зақымдалған балалар</strong>
+                <span>Ойынға үйрету, ойлауды қалыптастыру, сенсорика, әлеуметтік-эмоционалды және коммуникативтік дағдыларды дамыту қарастырылады.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>6. Үлгілік оқу жоспары бойынша тест тапсырмалары</h3>
+            <p class="lead">
+              Тапсырмалар ұйымдастырылған іс-әрекет, жас топтары, арнайы түзету
+              бағыттары және оқу жоспарының құрылымы бойынша берілді.
+            </p>
+
+            <div class="test-box" data-test="test557">
+              <div class="question" data-answer="C">
+                <div class="q-title">1. Үлгілік оқу жоспарының 1-қосымшасы қандай жас тобына арналған?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_1" value="A"> Мектепалды топ пен мектепалды сыныпқа арналған</label>
+                  <label class="option"><input type="radio" name="q557_1" value="B"> Ортаңғы және ересек топтарға арналған</label>
+                  <label class="option"><input type="radio" name="q557_1" value="C"> Бөбек жасындағы балаларға арналған</label>
+                  <label class="option"><input type="radio" name="q557_1" value="D"> Бастауыш сынып оқушыларына арналған</label>
+                  <label class="option"><input type="radio" name="q557_1" value="E"> Арнайы мектеп оқушыларына арналған</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: C. 1-қосымша бөбек жасындағы балаларға арналған мектепке дейінгі тәрбие мен оқытудың үлгілік оқу жоспары болып беріледі.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">2. Ұйымдастырылған іс-әрекет ұғымының мазмұны қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_2" value="A"> Үлгілік оқу бағдарламасының мазмұнын іске асыру үшін педагогтің ойын түріндегі түрлі балалар әрекеті арқылы ұйымдастыратын кіріктірілген сабағы</label>
+                  <label class="option"><input type="radio" name="q557_2" value="B"> Балалардың апталық жүктемесін есептеп, әкімшілік құжаттарды рәсімдеуге арналған жұмыс түрі</label>
+                  <label class="option"><input type="radio" name="q557_2" value="C"> Ата-аналармен жүргізілетін кеңес беру, сауалнама алу және жиналыс өткізу жүйесі</label>
+                  <label class="option"><input type="radio" name="q557_2" value="D"> Педагогтердің кәсіби біліктілігін бағалау және әдістемелік бірлестік жұмысын жоспарлау формасы</label>
+                  <label class="option"><input type="radio" name="q557_2" value="E"> Балабақшадағы топ бөлмелерін жабдықтау және санитарлық талаптарды сақтау тәртібі</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Ұйымдастырылған іс-әрекет педагогтің ойын, қимыл, танымдық, шығармашылық, зерттеу, еңбек, дербес әрекет арқылы ұйымдастыратын кіріктірілген сабағы ретінде сипатталады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="E">
+                <div class="q-title">3. Бөбек жасындағы балаларға арналған үлгілік оқу жоспарында дене тәрбиесі қалай беріледі?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_3" value="A"> Ерте жас тобында аптасына бір рет, кіші топта аптасына екі рет</label>
+                  <label class="option"><input type="radio" name="q557_3" value="B"> Ерте жас тобында күн сайын, кіші топта аптасына бір рет</label>
+                  <label class="option"><input type="radio" name="q557_3" value="C"> Ерте жас тобында аптасына екі рет, кіші топта күн сайын</label>
+                  <label class="option"><input type="radio" name="q557_3" value="D"> Ерте жас тобында аптасына төрт рет, кіші топта аптасына бір рет</label>
+                  <label class="option"><input type="radio" name="q557_3" value="E"> Ерте жас тобында және кіші топта аптасына үш рет, сондай-ақ күн сайын физикалық белсенділікке уақыт бөлінеді</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: E. Жоспарда дене тәрбиесі аптасына үш рет көрсетіледі, ал жас ерекшеліктерін ескере отырып балалардың физикалық белсенділігіне күн сайын уақыт бөлінеді.
+                </div>
+              </div>
+
+              <div class="question" data-answer="B">
+                <div class="q-title">4. Ортаңғы және ересек топтарда қазақ тілі қалай ұйымдастырылады?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_4" value="A"> Ортаңғы топта аптасына екі рет, ересек топта аптасына үш рет</label>
+                  <label class="option"><input type="radio" name="q557_4" value="B"> Аптасына бір рет және күн сайын түрлі балалар әрекетінде жүргізіледі</label>
+                  <label class="option"><input type="radio" name="q557_4" value="C"> Ортаңғы топта күн сайын, ересек топта мектепалды кезеңде басталады</label>
+                  <label class="option"><input type="radio" name="q557_4" value="D"> Аптасына үш рет ұйымдастырылып, музыкамен кіріктіріледі</label>
+                  <label class="option"><input type="radio" name="q557_4" value="E"> Айына бір рет өткізіліп, қоршаған әлеммен таныстыруға біріктіріледі</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: B. Мектеп жасына дейінгі балаларға арналған жоспарда қазақ тілі ортаңғы және ересек топтарда аптасына бір рет, сондай-ақ күн сайын жүргізіледі.
+                </div>
+              </div>
+
+              <div class="question" data-answer="D">
+                <div class="q-title">5. Ересек топта музыка ұйымдастырылған іс-әрекеті аптасына неше рет көрсетілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_5" value="A"> Аптасына бір рет</label>
+                  <label class="option"><input type="radio" name="q557_5" value="B"> Аптасына үш рет</label>
+                  <label class="option"><input type="radio" name="q557_5" value="C"> Аптасына төрт рет</label>
+                  <label class="option"><input type="radio" name="q557_5" value="D"> Аптасына екі рет</label>
+                  <label class="option"><input type="radio" name="q557_5" value="E"> Аптасына бес рет</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: D. Ересек топта музыка аптасына екі рет көрсетілген.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">6. Сөйлеу тілінің бұзылыстары бар балалар үшін арнайы түзету іс-әрекетінде қандай бағыттар көрсетіледі?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_6" value="A"> Коммуникативтік дағдыларды дамыту, сөйлеуді дамыту, дыбыстап айту</label>
+                  <label class="option"><input type="radio" name="q557_6" value="B"> Көру қабілеті, кеңістікте бағдарлай білу, әлеуметтік-тұрмыстық бағдар</label>
+                  <label class="option"><input type="radio" name="q557_6" value="C"> Емдік дене тәрбиесі, түзету жұмысы, бейімделген дене тәрбиесі</label>
+                  <label class="option"><input type="radio" name="q557_6" value="D"> Ойынға үйрету, ойлауды қалыптастыру, сенсорика</label>
+                  <label class="option"><input type="radio" name="q557_6" value="E"> Символдар арқылы коммуникация, кеңістікте бағдарлау, киіну дағдылары</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Сөйлеу тілінің бұзылыстары бар балалар үшін коммуникативтік дағдыларды дамыту, сөйлеуді дамыту және дыбыстап айту бағыттары беріледі.
+                </div>
+              </div>
+
+              <div class="question" data-answer="C">
+                <div class="q-title">7. Тірек-қимыл аппаратының бұзылыстары бар балаларға арналған арнайы түзету бағыттары қай жауапта берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q557_7" value="A"> Сөйлеуді дамыту және есту арқылы қабылдауды дамыту</label>
+                  <label class="option"><input type="radio" name="q557_7" value="B"> Көру қабілеті және кеңістікте бағдарлай білу</label>
+                  <label class="option"><input type="radio" name="q557_7" value="C"> Физикалық қасиеттерді дамыту, емдік дене тәрбиесі, түзету жұмысы</label>
+                  <label class="option"><input type="radio" name="q557_7" value="D"> Ойынға үйрету, ойлауды қалыптастыру, сенсорика</label>
+                  <label class="option"><input type="radio" name="q557_7" value="E"> Қоршаған ортамен таныстыру және сөйлеуді дамыту</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: C. Тірек-қимыл аппараты бұзылған балалар үшін физикалық қасиеттерді дамыту, емдік дене тәрбиесі және түзету жұмысы көрсетіледі.
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn" onclick="checkTest('test557')">Жауаптарды тексеру</button>
+                <button class="btn secondary" onclick="resetTest('test557')">Қайта тапсыру</button>
+              </div>
+              <div class="score" id="score-test557"></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="doc-section" id="doc499">
+          <article class="content-card">
+            <h2>№422 / №499: Мектепке дейінгі тәрбие мен оқытудың үлгілік оқу бағдарламасы</h2>
+            <p class="lead">
+              Үлгілік оқу бағдарламасы әр баланың қызығушылықтарын, ерекшеліктері мен
+              қажеттіліктерін ескере отырып, жалпы адами және ұлттық құндылықтар
+              негізінде баланы толыққанды дамытуға бағытталады.
+            </p>
+
+            <div class="info-row">
+              <div class="info-box">
+                <strong>Негізгі құжат</strong>
+                <span>ҚР БҒМ м.а. 2016 жылғы 12 тамыздағы №499 бұйрығы</span>
+              </div>
+              <div class="info-box">
+                <strong>Жаңа редакция</strong>
+                <span>ҚР Оқу-ағарту министрінің 14.10.2022 жылғы №422 бұйрығы</span>
+              </div>
+              <div class="info-box">
+                <strong>КТ байланысы</strong>
+                <span>Мақсат, міндет, жас топтары, дамыту бағыттары, күтілетін нәтижелер</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>1. Бағдарламаның мақсаты</h3>
+            <p>
+              Бағдарламаның мақсаты — әр баланың қызығушылықтарын, ерекшеліктері мен
+              қажеттіліктерін ескере отырып, жалпы адами және ұлттық құндылықтар
+              негізінде оларды толыққанды дамыту мен әлеуетін ашу.
+            </p>
+
+            <div class="note">
+              Бұл мақсат мектепке дейінгі білім берудің балаға бағдарланған мазмұнын,
+              жеке ерекшелікті ескеруді және ұлттық құндылықтармен тәрбиелеуді біріктіреді.
+            </div>
+          </article>
+                    <article class="content-card">
+            <h3>2. Бағдарламаның міндеттері</h3>
+            <p>
+              Бағдарлама міндеттері баланың қауіпсіз, жайлы және дамытушы ортада
+              тәрбиеленуіне, жас ерекшеліктеріне сәйкес біліктері мен дағдыларының
+              қалыптасуына, мектепке дейінгі және бастауыш білім беру арасындағы
+              сабақтастықтың қамтамасыз етілуіне бағытталған.
+            </p>
+
+            <div class="list-card">
+              <div class="list-item">
+                <div class="list-num">1</div>
+                <div>
+                  <strong>Қауіпсіз білім беру жағдайы</strong>
+                  <span>Мектеп жасына дейінгі балаларды тәрбиелеу мен оқыту үшін жайлы және қауіпсіз жағдай жасау.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">2</div>
+                <div>
+                  <strong>Дамытушы заттық-кеңістіктік орта</strong>
+                  <span>Баланың даралығы мен субъективтілігін қолдайтын, оның ішінде арнайы ортаны құру.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">3</div>
+                <div>
+                  <strong>Дағдыларды қалыптастыру</strong>
+                  <span>Жас ерекшеліктеріне сәйкес біліктері мен дағдыларын қалыптастыру.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">4</div>
+                <div>
+                  <strong>Сабақтастық және үздіксіздік</strong>
+                  <span>Мектепке дейінгі білім беру мен бастауыш білім берудің сабақтастығын қамтамасыз ету.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">5</div>
+                <div>
+                  <strong>Ұлттық және отбасылық құндылықтар</strong>
+                  <span>Балаларды қазақ халқының ұлттық құндылықтарына, отбасылық құндылықтарға, отаншылдыққа баулу.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">6</div>
+                <div>
+                  <strong>Мектепке дайындық</strong>
+                  <span>Мектепте оқуға физикалық, психологиялық, эмоционалдық және әлеуметтік дайындық үшін тең бастапқы мүмкіндіктер беру.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>3. Бағдарлама мазмұнының негізгі бағыттары</h3>
+            <p>
+              Бағдарлама мазмұны баланың денсаулығын, қарым-қатынасын, танымдық
+              белсенділігін, шығармашылығын, әлеуметтік-эмоционалды дамуын және
+              мектепке дайындық мүмкіндіктерін қамтиды.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Бағыт</th>
+                    <th>Мазмұны</th>
+                    <th>КТ үшін негізгі тірек</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Физикалық даму</td>
+                    <td>Дені сау баланы тәрбиелеу, салауатты өмір салты, қауіпсіз өмір сүру дағдылары</td>
+                    <td>Дене тәрбиесі және қауіпсіздік</td>
+                  </tr>
+                  <tr>
+                    <td>Коммуникативтік даму</td>
+                    <td>Ауызекі сөйлеу, сөздік қор, өмірлік жағдайлардағы қарым-қатынас дағдылары</td>
+                    <td>Сөйлеу және қарым-қатынас</td>
+                  </tr>
+                  <tr>
+                    <td>Танымдық даму</td>
+                    <td>Қоршаған әлеммен әрекеттесу, танымдық және зерттеушілік әрекеттің қарапайым дағдылары</td>
+                    <td>Таным және зерттеу</td>
+                  </tr>
+                  <tr>
+                    <td>Шығармашылық даму</td>
+                    <td>Өнерді қабылдау, эмоционалды тану, өзіндік шығармашылық іс-әрекет</td>
+                    <td>Шығармашылық әрекет</td>
+                  </tr>
+                  <tr>
+                    <td>Әлеуметтік-эмоционалды даму</td>
+                    <td>Оң әлеуметтендіру, әлеуметтік-мәдени нормалар, отбасы дәстүрлері, рухани-адамгершілік құндылықтар</td>
+                    <td>Әлеуметтену және құндылық</td>
+                  </tr>
+                  <tr>
+                    <td>Сабақтастық</td>
+                    <td>Мектепке дейінгі тәрбие мен оқыту және бастауыш білім беру арасындағы үздіксіздік</td>
+                    <td>Мектепке дайындық</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>4. Бағдарлама іске асырылатын жас топтары</h3>
+            <p>
+              Бағдарлама мазмұны балалардың физикалық және психикалық дамуының жас
+              кезеңдерін ескере отырып іске асырылады.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Жас тобы</th>
+                    <th>Балалардың жасы</th>
+                    <th>Бағдарламадағы орны</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ерте жас тобы</td>
+                    <td>1 жастағы балалар</td>
+                    <td>Бастапқы бейімделу, негізгі қимылдар, сөзді түсіну, сенсорика, әлеуметтік байланыс</td>
+                  </tr>
+                  <tr>
+                    <td>Кіші топ</td>
+                    <td>2 жастағы балалар</td>
+                    <td>Негізгі қимылдарды жетілдіру, сөздік қорды байыту, заттық әрекет, дербестік</td>
+                  </tr>
+                  <tr>
+                    <td>Ортаңғы топ</td>
+                    <td>3 жастағы балалар</td>
+                    <td>Ойын әрекеті, сөйлеу, математикалық түсініктер, шығармашылық және әлеуметтік дағдылар</td>
+                  </tr>
+                  <tr>
+                    <td>Ересек топ</td>
+                    <td>4 жастағы балалар</td>
+                    <td>Қарым-қатынас мәдениеті, зерттеу әрекеті, шығармашылық дербестік, еңбекке баулу</td>
+                  </tr>
+                  <tr>
+                    <td>Мектепалды топ / сынып</td>
+                    <td>5 жастағы балалар</td>
+                    <td>Мектепке физикалық, психологиялық, эмоционалдық және әлеуметтік дайындық</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="note">
+              Бағдарламаның мазмұнын меңгеру мерзімі — <strong>5 жыл</strong>, бір жас тобында —
+              <strong>1 жыл</strong>.
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>5. Педагог балаға үйрететін негізгі әрекеттер</h3>
+            <p>
+              Бағдарламада педагогтің балаға меңгертетін өмірлік, әлеуметтік, танымдық
+              және қауіпсіздікке байланысты негізгі әрекеттері көрсетіледі.
+            </p>
+
+            <div class="term-grid">
+              <div class="term">
+                <strong>Дұрыс пен бұрысты түсіну</strong>
+                <span>Бала мінез-құлық нормаларын ажыратып, мәдени қарым-қатынасқа үйренеді.</span>
+              </div>
+
+              <div class="term">
+                <strong>Сыпайылық және мейірімділік</strong>
+                <span>Құрдастарымен және ересектермен жағымды қарым-қатынас орнатуға бағытталады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Достық және құрмет</strong>
+                <span>Көмектесу, бөлісу, бірлесіп әрекет ету және құрмет көрсету дағдылары қалыптасады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Қоршаған әлемді зерттеу</strong>
+                <span>Қызығушылық таныту, бақылау, салыстыру және зерттеу әрекеттері дамиды.</span>
+              </div>
+
+              <div class="term">
+                <strong>Саналы сөйлеу</strong>
+                <span>Тыңдау, түсіну, өз ойын жеткізу және сөздік қорды қолдану дағдылары дамиды.</span>
+              </div>
+
+              <div class="term">
+                <strong>Қауіпсіз мінез-құлық</strong>
+                <span>Қауіпсіздік ережелері мен салауатты әдеттерді сақтау қалыптасады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Өзі ойнау</strong>
+                <span>Баланың дербес ойын әрекеті, бастамасы және таңдау мүмкіндігі қолдау табады.</span>
+              </div>
+
+              <div class="term">
+                <strong>Еңбекқорлық</strong>
+                <span>Ересектерге көмектесу, қарапайым еңбек әрекеттеріне қатысу және жауапкершілік қалыптасады.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>6. Ерте жас тобы: 1 жастағы балалар</h3>
+            <p>
+              Ерте жас тобында баланың бейімделуі, негізгі қимылдары, сөзді түсінуі,
+              сенсорлық тәжірибесі, алғашқы әлеуметтік байланыстары және қауіпсіз
+              мінез-құлық негіздері қалыптасады.
+            </p>
+
+            <div class="mini-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Даму бағыты</th>
+                    <th>Мақсаты</th>
+                    <th>Күтілетін нәтиже үлгілері</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Физикалық қасиеттер</td>
+                    <td>Денсаулықты нығайту, негізгі қимыл түрлерін дамыту</td>
+                    <td>Тура жолмен жүреді, жұмсақ модульге көтеріледі, допты домалатады</td>
+                  </tr>
+                  <tr>
+                    <td>Коммуникативтік дағдылар</td>
+                    <td>Ауызекі сөйлеу арқылы әлеуметтік-коммуникативтік дағдыларды дамыту</td>
+                    <td>Қарапайым сөз тіркестерін түсінеді, екі сөзден тұратын сөйлем айтады</td>
+                  </tr>
+                  <tr>
+                    <td>Танымдық және зияткерлік дағдылар</td>
+                    <td>Қоршаған әлеммен әрекет ету үшін қарапайым танымдық дағдыларды меңгерту</td>
+                    <td>Түсі мен өлшемі бойынша заттарды ажыратады, 4–5 сақинадан пирамида жинайды</td>
+                  </tr>
+                  <tr>
+                    <td>Шығармашылық дағдылар</td>
+                    <td>Танымдық, шығармашылық және музыкалық қабілеттерді қалыптастыру</td>
+                    <td>Ермексазды домалатады, музыкаға қызығушылық танытады, қарапайым би қимылдарын орындайды</td>
+                  </tr>
+                  <tr>
+                    <td>Әлеуметтік-эмоционалды дағдылар</td>
+                    <td>Әлеуметтік тәжірибе мен жеке қасиеттерді қалыптастыру</td>
+                    <td>Өзін фотосуреттен таниды, амандасады, қоштасады, “болады”, “болмайды”, “қауіпті” сөздерін түсінеді</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>7. Кіші топ: 2 жастағы балалар</h3>
+            <p>
+              Кіші топта негізгі қимыл түрлерін жетілдіру, сөздік қорды байыту,
+              қарапайым грамматикалық құрылымдарды қолдану, сенсорлық тәжірибені дамыту
+              және дербестікке баулу күшейеді.
+            </p>
+
+            <div class="list-card">
+              <div class="list-item">
+                <div class="list-num">1</div>
+                <div>
+                  <strong>Физикалық даму</strong>
+                  <span>Жүру, жүгіру, өрмелеу, лақтыру, секіру, тепе-теңдік сақтау дағдылары жетілдіріледі.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">2</div>
+                <div>
+                  <strong>Коммуникативтік даму</strong>
+                  <span>Сөздік қор ойыншық, киім, ыдыс, көгөніс, жеміс, үй жануарлары және еңбек әрекеттерін білдіретін сөздермен байытылады.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">3</div>
+                <div>
+                  <strong>Грамматикалық құрылым</strong>
+                  <span>Зат есімнің көпше түрін, сын есім мен зат есімнің байланысын, сөз тіркестерін құра білу қалыптасады.</span>
+                </div>
+              </div>
+
+              <div class="list-item">
+                <div class="list-num">4</div>
+                <div>
+                  <strong>Көркем әдебиет</strong>
+                  <span>Бесік жырлары, халық әндері, ертегілер және авторлық шығармаларды тыңдау арқылы қызығушылық дамиды.</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>8. Үлгілік оқу бағдарламасы бойынша тест тапсырмалары</h3>
+            <p class="lead">
+              Тапсырмалар бағдарламаның мақсаты, міндеттері, жас топтары, дамыту
+              бағыттары және күтілетін нәтижелері бойынша берілді.
+            </p>
+
+            <div class="test-box" data-test="test499">
+              <div class="question" data-answer="B">
+                <div class="q-title">1. Үлгілік оқу бағдарламасының мақсаты қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_1" value="A"> Педагогтердің кәсіби қызметін бағалау және біліктілік санаттарын белгілеу</label>
+                  <label class="option"><input type="radio" name="q499_1" value="B"> Әр баланың қызығушылықтарын, ерекшеліктері мен қажеттіліктерін ескере отырып, жалпы адами және ұлттық құндылықтар негізінде толыққанды дамыту мен әлеуетін ашу</label>
+                  <label class="option"><input type="radio" name="q499_1" value="C"> Мектепке дейінгі ұйымдардың қаржыландыру тәртібін және материалдық жабдықталуын реттеу</label>
+                  <label class="option"><input type="radio" name="q499_1" value="D"> Балабақша қызметкерлерінің еңбек кестесін және әкімшілік басқару құрылымын анықтау</label>
+                  <label class="option"><input type="radio" name="q499_1" value="E"> Бастауыш сынып оқушыларының оқу жетістіктерін бағалау жүйесін енгізу</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: B. Бағдарламаның мақсаты әр баланың қызығушылықтары, ерекшеліктері мен қажеттіліктерін ескере отырып, жалпы адами және ұлттық құндылықтар негізінде толыққанды дамыту мен әлеуетін ашу болып табылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="D">
+                <div class="q-title">2. Бағдарлама мазмұны іске асырылатын жас топтары қай жауапта дұрыс көрсетілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_2" value="A"> Кіші топ, негізгі топ, жоғары топ, даярлық курсы</label>
+                  <label class="option"><input type="radio" name="q499_2" value="B"> Бөбек топ, бастауыш топ, негізгі топ, мектепалды сынып</label>
+                  <label class="option"><input type="radio" name="q499_2" value="C"> Ерте дамыту тобы, аралас топ, бейімдеу тобы, қосымша топ</label>
+                  <label class="option"><input type="radio" name="q499_2" value="D"> Ерте жас тобы, кіші топ, ортаңғы топ, ересек топ, мектепалды топ немесе мектепалды сынып</label>
+                  <label class="option"><input type="radio" name="q499_2" value="E"> Даярлық тобы, бірінші сынып, екінші сынып, түзету сыныбы</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: D. Бағдарлама ерте жас тобы, кіші топ, ортаңғы топ, ересек топ, мектепалды топ және мектепалды сыныпта іске асырылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">3. Бағдарлама міндеттерінің бірі қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_3" value="A"> Баланың даралығы мен субъективтілігін қолдауға бағытталған дамытушы заттық-кеңістіктік ортаны құру</label>
+                  <label class="option"><input type="radio" name="q499_3" value="B"> Педагогикалық кеңес шешімдерін рәсімдеу және жылдық есептерді бекіту</label>
+                  <label class="option"><input type="radio" name="q499_3" value="C"> Мектеп ғимаратының техникалық жағдайын бақылау және жөндеу мерзімін анықтау</label>
+                  <label class="option"><input type="radio" name="q499_3" value="D"> Бастауыш сыныптағы пәндер бойынша тоқсандық бағаларды шығару</label>
+                  <label class="option"><input type="radio" name="q499_3" value="E"> Педагогтердің еңбек демалысын бөлу және әкімшілік кестені жүргізу</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Бағдарлама міндеттерінің бірі — баланың даралығы мен субъективтілігін қолдауға бағытталған дамытушы заттық-кеңістіктік ортаны, оның ішінде арнайы ортаны құру.
+                </div>
+              </div>
+
+              <div class="question" data-answer="C">
+                <div class="q-title">4. Бағдарламада педагог балаға үйрететін әрекеттер қатарына қайсы жатады?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_4" value="A"> Қызметтік хат жазу, бұйрық дайындау, статистикалық есеп құру</label>
+                  <label class="option"><input type="radio" name="q499_4" value="B"> Тоқсандық баға шығару, пәндік олимпиада өткізу, емтихан тапсыру</label>
+                  <label class="option"><input type="radio" name="q499_4" value="C"> Дос болу, құрметтеу, көмектесу, бөлісу және қауіпсіз мінез-құлық ережелерін сақтау</label>
+                  <label class="option"><input type="radio" name="q499_4" value="D"> Сабақ кестесін бекіту, сынып журналын толтыру, оқу кабинетін бөлу</label>
+                  <label class="option"><input type="radio" name="q499_4" value="E"> Курстық жұмыс жазу, деректерді талдау, зерттеу нәтижесін қорғау</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: C. Бағдарламада педагог балаға дос болуды, құрметтеуді, көмектесуді, бөлісуді, қауіпсіз мінез-құлық ережелері мен салауатты әдеттерді сақтауды үйрететіні көрсетіледі.
+                </div>
+              </div>
+                            <div class="question" data-answer="E">
+                <div class="q-title">5. Ерте жас тобында физикалық дамытудың мақсаты қай жауапта дұрыс көрсетілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_5" value="A"> Балалардың сөздік қорын зат есімдермен және етістіктермен байыту</label>
+                  <label class="option"><input type="radio" name="q499_5" value="B"> Балалардың қоршаған әлеммен әрекет етуіне қажет сенсорлық тәжірибесін кеңейту</label>
+                  <label class="option"><input type="radio" name="q499_5" value="C"> Балалардың шығармашылық және музыкалық қабілеттерін қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_5" value="D"> Баланың әлеуметтік тәжірибесін және жеке қасиеттерін қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_5" value="E"> Денсаулықты нығайтатын, ағзаны шынықтыратын, негізгі қимыл түрлерін дамытатын жағдайлармен қамтамасыз ету</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: E. Ерте жас тобында физикалық дамытудың мақсаты денсаулық сақтау технологиясын қолдана отырып, денсаулықты нығайтатын, ағзаны шынықтыратын және негізгі қимыл түрлерін дамытатын жағдайлармен қамтамасыз ету болып табылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="B">
+                <div class="q-title">6. Ерте жас тобында коммуникативтік дағдыларды дамытудың мақсаты қандай?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_6" value="A"> Қоршаған әлеммен әрекет ету үшін танымдық іс-әрекеттің қарапайым дағдыларын меңгерту</label>
+                  <label class="option"><input type="radio" name="q499_6" value="B"> Балалардың ауызекі сөйлеуін дамыту арқылы әлеуметтік-коммуникативтік дағдыларды дамыту үшін жағдайлармен қамтамасыз ету</label>
+                  <label class="option"><input type="radio" name="q499_6" value="C"> Балалардың танымдық, шығармашылық және музыкалық қабілеттерін қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_6" value="D"> Әртүрлі өмірлік және ойын жағдаяттарында әлеуметтік қатынастар жүйесіне енуді қамтамасыз ету</label>
+                  <label class="option"><input type="radio" name="q499_6" value="E"> Салауатты өмір салты негіздерін, қауіпсіз өмір сүру дағдыларын және қимыл белсенділігін қалыптастыру</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: B. Коммуникативтік дағдыларды дамытудың мақсаты балалардың ауызекі сөйлеуін дамыту арқылы әлеуметтік-коммуникативтік дағдыларды дамытуға жағдай жасау болып табылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="D">
+                <div class="q-title">7. Ерте жас тобында танымдық және зияткерлік дағдыларды дамытудың мақсаты қайсы?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_7" value="A"> Сөйлеуді және фонематикалық естуді дамыту, белсенді сөздік қорды қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_7" value="B"> Музыканы эмоционалды қабылдау, ән айту және ырғақты қозғалыстарды орындау</label>
+                  <label class="option"><input type="radio" name="q499_7" value="C"> Салауатты өмір салты туралы бастапқы түсініктер қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_7" value="D"> Қоршаған әлеммен өзара әрекет ету үшін қажетті танымдық іс-әрекеттің қарапайым дағдыларын меңгеруге жағдай жасау</label>
+                  <label class="option"><input type="radio" name="q499_7" value="E"> Құрдастарымен мейірімді қарым-қатынас пен мінез-құлық мәдениетін қалыптастыру</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: D. Танымдық және зияткерлік дағдыларды дамытудың мақсаты қоршаған әлеммен өзара әрекет ету үшін қажетті танымдық іс-әрекеттің қарапайым дағдыларын меңгертуге жағдай жасау болып табылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="A">
+                <div class="q-title">8. Ерте жас тобында әлеуметтік-эмоционалды дағдыларды қалыптастырудың мақсаты қандай?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_8" value="A"> Әртүрлі өмірлік және ойын жағдаяттарында әлеуметтік қатынастар жүйесіне ену негізінде баланың әлеуметтік тәжірибесін, жеке қасиеттерін қалыптастыру</label>
+                  <label class="option"><input type="radio" name="q499_8" value="B"> Негізгі қимылдарды, спорттық жаттығуларды және шынықтыру шараларын жетілдіру</label>
+                  <label class="option"><input type="radio" name="q499_8" value="C"> Заттарды түсі, өлшемі, пішіні бойынша ажырату және топтастыру дағдыларын дамыту</label>
+                  <label class="option"><input type="radio" name="q499_8" value="D"> Ән айту, музыка тыңдау, би қимылдарын және аспаптармен ойнауды дамыту</label>
+                  <label class="option"><input type="radio" name="q499_8" value="E"> Көркем шығармаларды тыңдау, кейіпкерлер әрекетін қайталау және тақпақ айту</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: A. Әлеуметтік-эмоционалды дағдыларды қалыптастыру мақсаты баланың әлеуметтік тәжірибесін және жеке қасиеттерін қалыптастыруға бағытталған.
+                </div>
+              </div>
+
+              <div class="question" data-answer="C">
+                <div class="q-title">9. Кіші топтағы балалардың сөздік қорын қалыптастыруда қандай сөздермен байыту көрсетіледі?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_9" value="A"> Ғылыми терминдер, зерттеу әдістері, статистикалық ұғымдар, академиялық атаулар</label>
+                  <label class="option"><input type="radio" name="q499_9" value="B"> Геометриялық дәлелдер, формулалар, есептеу алгоритмдері, координаталық ұғымдар</label>
+                  <label class="option"><input type="radio" name="q499_9" value="C"> Ойыншық, киім, аяқкиім, ыдыс, жиһаз, көгөніс пен жеміс, үй жануарлары және еңбек әрекеттерін білдіретін сөздер</label>
+                  <label class="option"><input type="radio" name="q499_9" value="D"> Құжат атаулары, әкімшілік бұйрықтар, есеп беру формалары, қызметтік хаттар</label>
+                  <label class="option"><input type="radio" name="q499_9" value="E"> Пәндік тақырыптар, бақылау жұмыстары, тоқсандық бағалар, сынып журналдары</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: C. Кіші топта сөздік қор ойыншық, киім, аяқкиім, ыдыс, жиһаз, көгөніс пен жеміс, үй жануарлары және еңбек әрекеттерін білдіретін сөздермен байытылады.
+                </div>
+              </div>
+
+              <div class="question" data-answer="E">
+                <div class="q-title">10. Кіші топта тілдің грамматикалық құрылымын қалыптастыруға қатысты мазмұн қай жауапта дұрыс берілген?</div>
+                <div class="options">
+                  <label class="option"><input type="radio" name="q499_10" value="A"> Есептерді шығару, сандарды салыстыру, геометриялық фигураларды дәлелдеу</label>
+                  <label class="option"><input type="radio" name="q499_10" value="B"> Құжаттарды тіркеу, бұйрық мәтінін талдау, қызметтік хат жазу</label>
+                  <label class="option"><input type="radio" name="q499_10" value="C"> Қимылды ойын ережесін құрастыру, спорттық жарысты ұйымдастыру, жаттығу кешенін бекіту</label>
+                  <label class="option"><input type="radio" name="q499_10" value="D"> Музыкалық аспаптарды ажырату, ырғақты қозғалыс орындау, ән әуенін қайталау</label>
+                  <label class="option"><input type="radio" name="q499_10" value="E"> Зат есімнің көпше түрін қолдану, сын есімді зат есіммен байланыстыру, сөз тіркестерін құра білу</label>
+                </div>
+                <div class="explanation">
+                  Дұрыс жауап: E. Кіші топта балалар зат есімнің көпше түрін қолдануға, сын есімді зат есіммен байланыстыруға және сөз тіркестерін құра білуге үйренеді.
+                </div>
+              </div>
+
+              <div class="btn-row">
+                <button class="btn" onclick="checkTest('test499')">Жауаптарды тексеру</button>
+                <button class="btn secondary" onclick="resetTest('test499')">Қайта тапсыру</button>
+              </div>
+              <div class="score" id="score-test499"></div>
+            </div>
+          </article>
+        </section>
+              </div>
+    </main>
+
+    <footer class="section">
+      <div class="content-card">
+        <h3>Қорытынды</h3>
+        <p>
+          Бұл сайт мектепке дейінгі педагогика бойынша ресми құжаттарды КТ мазмұнына
+          сәйкес жүйелі қайталауға арналған. Теориялық бөлімдерден кейін берілген тесттер
+          негізгі ұғымдарды бекітуге көмектеседі.
+        </p>
+        <div class="note">
+          © Назерке. Барлық құқық қорғалған. Материалды рұқсатсыз көшіруге, сатуға,
+          қайта таратуға немесе коммерциялық мақсатта қолдануға болмайды.
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-space"></div>
+  </div>
+
+  <script>
+    function showDoc(id) {
+      const sections = document.querySelectorAll(".doc-section");
+      const buttons = document.querySelectorAll("[data-doc-btn]");
+
+      sections.forEach(section => {
+        section.classList.remove("active");
+      });
+
+      buttons.forEach(button => {
+        button.classList.remove("active");
+      });
+
+      const activeSection = document.getElementById(id);
+      const activeButton = document.querySelector(`[data-doc-btn="${id}"]`);
+
+      if (activeSection) {
+        activeSection.classList.add("active");
+      }
+
+      if (activeButton) {
+        activeButton.classList.add("active");
+      }
+
+      const study = document.getElementById("study");
+      if (study) {
+        study.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function checkTest(testId) {
+      const test = document.querySelector(`[data-test="${testId}"]`);
+      const scoreBox = document.getElementById(`score-${testId}`);
+
+      if (!test || !scoreBox) return;
+
+      const questions = test.querySelectorAll(".question");
+      let correct = 0;
+
+      questions.forEach((question) => {
+        const answer = question.dataset.answer;
+        const selected = question.querySelector("input[type='radio']:checked");
+
+        question.classList.remove("correct", "wrong");
+        question.classList.add("checked");
+
+        if (selected && selected.value === answer) {
+          correct++;
+          question.classList.add("correct");
+        } else {
+          question.classList.add("wrong");
+        }
+      });
+
+      const total = questions.length;
+      const percent = total ? Math.round((correct / total) * 100) : 0;
+
+      let level = "";
+      if (percent >= 85) {
+        level = "Жоғары нәтиже";
+      } else if (percent >= 60) {
+        level = "Жақсы нәтиже";
+      } else {
+        level = "Қайталау қажет";
+      }
+
+      scoreBox.style.display = "block";
+      scoreBox.textContent = `Нәтиже: ${correct}/${total} дұрыс жауап · ${percent}% · ${level}`;
+    }
+
+    function resetTest(testId) {
+      const test = document.querySelector(`[data-test="${testId}"]`);
+      const scoreBox = document.getElementById(`score-${testId}`);
+
+      if (!test) return;
+
+      const questions = test.querySelectorAll(".question");
+      questions.forEach(question => {
+        question.classList.remove("correct", "wrong", "checked");
+        const inputs = question.querySelectorAll("input[type='radio']");
+        inputs.forEach(input => {
+          input.checked = false;
+        });
+      });
+
+      if (scoreBox) {
+        scoreBox.style.display = "none";
+        scoreBox.textContent = "";
+      }
+    }
+  </script>
+</body>
+</html>
+              
